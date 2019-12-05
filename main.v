@@ -12,7 +12,7 @@ module main(
   reg [7:0] led_num;
   reg [24:0] test_color;
   assign test_color = 24'b000111110000000000111111;
-  // Process the state machine at each 12MHz clock edge.
+  // cyan color test
   always@(posedge clk)
     begin
       // Process the state machine; states 0-3 are the four WS2812B 'ticks',
