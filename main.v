@@ -15,6 +15,7 @@ module main(
   // cyan color test
   always@(posedge clk)
     begin
+      // made for 12Mhz
       // Process the state machine; states 0-3 are the four WS2812B 'ticks',
       // each consisting of 83.33 * 4 ~= 333.33 nanoseconds. Four of those
       // ticks are then ~1333.33 nanoseconds long, and we can get close to
